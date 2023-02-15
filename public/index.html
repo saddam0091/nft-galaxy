@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Gallaxy</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ./Google Font -->
+
+    <!-- Swiper Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- ./Swiper Slider -->
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body class="relative bg-dark font-roboto text-white">
+    <!-- =============== Navigation Menu =============== -->
+    <header
+      class="fixed top-0 z-30 w-full bg-dark/50 backdrop-blur-lg transition-all duration-300"
+    >
+      <div
+        id="overlay"
+        class="fixed z-40 hidden h-screen w-full bg-black/75 transition-all duration-1000"
+      ></div>
+      <div class="container">
+        <nav>
+          <div
+            class="flex justify-between py-6 transition-all duration-300 sm:py-8 lg:items-center lg:py-10"
+          >
+            <div>
+              <a href="#/">
+                <img
+                  class="w-[150px] md:w-[170px] lg:w-[200px]"
+                  src="assets/images/nft-galaxy-logo.png"
+                  alt="nft-galaxy-logo"
+                />
+              </a>
+            </div>
+            <div
+              id="primary-menu"
+              class="absolute top-0 -right-full z-50 flex h-screen w-full flex-col items-center justify-center overflow-auto bg-green-200 py-12 transition-all duration-300 md:w-1/2 lg:relative lg:top-auto lg:right-auto lg:h-auto lg:w-auto lg:flex-row lg:bg-transparent lg:py-0 xl:basis-3/4 xl:justify-between 2xl:basis-[70%]"
+            >
+              <ul class="lg:flex">
+                <li>
+                  <a class="primary-nav-link" href="#/">About</a>
+                </li>
+                <li>
+                  <a class="primary-nav-link" href="#/">Collection</a>
+                </li>
+                <li>
+                  <a class="primary-nav-link" href="#/">Team</a>
+                </li>
+                <li>
+                  <a class="primary-nav-link" href="#/">Artist</a>
+                </li>
+              </ul>
+              <div class="w-full lg:w-auto">
+                <a
+                  class="mx-4 mt-8 block rounded-full bg-gradient-to-r from-primary via-[#8BE038] to-secondary bg-[length:125%_100%] py-[14px] px-[28px] text-center text-[22px] text-black transition-all duration-300 ease-in-out hover:bg-right-top lg:mt-0 lg:mr-0"
+                  href="#/"
+                  >Search</a
+                >
+              </div>
+            </div>
+            <div
+              id="hamburger-menu"
+              class="hamburger-menu relative z-50 h-[35px] w-[35px] rotate-0 scale-75 cursor-pointer transition-all duration-300 md:scale-100 lg:hidden"
+            >
+              <span class="top-0"></span>
+              <span class="top-[13px]"></span>
+              <span class="top-[13px]"></span>
+              <span class="top-[26px]"></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ./Navigation Menu -->
+
+    <!-- =============== Hero Area =============== -->
+    <section class="section-py mt-[128px] md:mt-[150px]">
+      <div class="m-auto max-w-[1800px] px-4">
+        <div class="flex flex-col lg:flex-row">
+          <div
+            class="relative order-2 h-[450px] overflow-hidden sm:h-[550px] lg:order-1 lg:h-[650px] lg:basis-1/2 2xl:h-[770px] 3xl:h-[820px]"
+          >
+            <div
+              class="absolute top-1/2 left-1/2 h-[200px] w-[200px] -translate-x-1/2 -translate-y-1/2 scale-[0.4] before:absolute before:left-1/2 before:top-1/2 before:h-[800px] before:w-[800px] before:-translate-x-[44%] before:-translate-y-1/2 before:rotate-[-9deg] before:bg-[url('../assets/images/triangle-outline.png')] before:bg-contain before:bg-center before:bg-no-repeat sm:scale-50 lg:scale-[0.6] xl:top-[60%] xl:scale-75 2xl:scale-90 3xl:scale-100"
+            >
+              <div class="card__single card__single--top group z-[2]">
+                <div class="h-[240px] preserve-3d">
+                  <img
+                    class="group-hover:card__img--hover absolute -bottom-[2px] w-full object-cover drop-shadow-[-1px_10px_5px_rgba(0,0,0,0.5)] transition duration-500 ease-in-out group-hover:drop-shadow-[-15px_10px_10px_rgba(0,0,0,0.3)]"
+                    src="assets/images/card-image-1.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="relative flex justify-between rounded-[10px] bg-gradient-to-r from-primary to-secondary py-[30px] px-[25px] text-[#333333]"
+                >
+                  <div>
+                    <h4 class="mb-[10px] font-medium">FERXXO Abstract</h4>
+                    <p class="text-[10px]">Unique artwork light lamp.</p>
+                  </div>
+                  <div class="flex flex-col justify-around text-xs">
+                    <span>High Bid</span>
+                    <span>0.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card__single card__single--middle group z-[1]">
+                <div class="h-[240px] preserve-3d">
+                  <img
+                    class="group-hover:card__img--hover absolute -bottom-[2px] w-full object-cover drop-shadow-[-1px_10px_5px_rgba(0,0,0,0.5)] transition duration-500 ease-in-out group-hover:drop-shadow-[-15px_10px_10px_rgba(0,0,0,0.3)]"
+                    src="assets/images/card-image-3.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="relative flex justify-between rounded-[10px] bg-gradient-to-r from-primary to-secondary py-[30px] px-[25px] text-[#333333]"
+                >
+                  <div>
+                    <h4 class="mb-[10px] font-medium">FERXXO Abstract</h4>
+                    <p class="text-[10px]">Unique artwork light lamp.</p>
+                  </div>
+                  <div class="flex flex-col justify-around text-xs">
+                    <span>High Bid</span>
+                    <span>0.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card__single card__single--bottom group">
+                <div class="h-[240px] preserve-3d">
+                  <img
+                    class="group-hover:card__img--hover absolute -bottom-[2px] w-full object-cover drop-shadow-[-1px_10px_5px_rgba(0,0,0,0.5)] transition duration-500 ease-in-out group-hover:drop-shadow-[-15px_10px_10px_rgba(0,0,0,0.3)]"
+                    src="assets/images/card-image-2.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="relative flex justify-between rounded-[10px] bg-gradient-to-r from-primary to-secondary py-[30px] px-[25px] text-[#333333]"
+                >
+                  <div>
+                    <h4 class="mb-[10px] font-medium">FERXXO Abstract</h4>
+                    <p class="text-[10px]">Unique artwork light lamp.</p>
+                  </div>
+                  <div class="flex flex-col justify-around text-xs">
+                    <span>High Bid</span>
+                    <span>0.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="order-1 m-auto max-w-[530px] lg:order-2 lg:max-w-none lg:basis-1/2 xl:mt-16 2xl:mt-24"
+          >
+            <div
+              class="text-center lg:px-[30px] lg:text-left 2xl:max-w-[800px]"
+            >
+              <h1
+                class="gradient clip-text text-4xl font-black sm:text-[42px] lg:text-6xl lg:leading-[1.11em] xl:text-7xl 2xl:text-[80px] 3xl:text-[90px]"
+              >
+                Discover, Collect, Buy & Sell Popular NFTs
+              </h1>
+              <p class="para my-7 xl:my-10">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Possimus iste voluptas ullam eos facere unde repudiandae neque.
+              </p>
+              <div class="space-x-2 lg:space-x-4">
+                <a class="btn" href="#/" data="Explore Now"></a>
+                <a class="btn" href="#/" data="Create NFT"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Hero Area -->
+
+    <!-- =============== Banner Area =============== -->
+    <section class="-mt-16 xl:-mt-12">
+      <div
+        class="h-[100px] overflow-hidden xs:h-[120px] sm:h-[150px] lg:h-[300px] xl:h-[350px]"
+      >
+        <div
+          class="relative top-1/2 left-1/2 z-0 h-[60px] w-[110%] -translate-y-1/2 -translate-x-1/2 -rotate-[5deg] bg-gradient-to-r from-green-200 to-green-100 before:absolute before:inset-0 before:-z-[1] before:bg-[url('../assets/images/banner.png')] before:bg-[length:180px_auto] before:bg-center before:bg-repeat-x lg:h-[100px] lg:before:bg-[length:250px_auto] xl:h-[140px] xl:before:bg-[length:320px_auto]"
+        ></div>
+      </div>
+    </section>
+    <!-- ./Banner Area -->
+
+    <!-- =============== NFTs Collection Area  =============== -->
+    <section class="section-my section-py">
+      <div class="container">
+        <div
+          class="space-y-5 sm:space-y-10 md:flex md:space-y-14 md:space-x-4 lg:space-y-20"
+        >
+          <div class="md:basis-1/2">
+            <h2 class="section-heading w-max">NFTs Collections</h2>
+            <p class="section-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              maxime aperiam quo veritatis quaerat quia deserunt porro, debitis
+              illum tempore eius? Maxime necessitatibus aut aliquid?
+            </p>
+          </div>
+          <div class="md:basis-1/2">
+            <div
+              class="gradient max-w-sm rounded-md p-[2px] xs:max-w-none sm:m-auto sm:w-max md:w-auto"
+            >
+              <ul class="flex flex-wrap gap-4 rounded-md bg-green-300 p-5">
+                <li class="gradient rounded-md">
+                  <a class="nft-collection-link" href="#/">All</a>
+                </li>
+                <li class="gradient rounded-md">
+                  <a class="nft-collection-link" href="#/">NFT</a>
+                </li>
+                <li class="gradient rounded-md">
+                  <a class="nft-collection-link" href="#/">Music</a>
+                </li>
+                <li class="gradient rounded-md">
+                  <a class="nft-collection-link" href="#/">Collection</a>
+                </li>
+                <li class="gradient rounded-md">
+                  <a class="nft-collection-link" href="#/">Visual World</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="swiper mt-12 sm:mt-16 lg:mt-20 2xl:mt-28">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-1.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-2.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-3.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-4.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-5.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-6.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-7.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-8.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-9.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="swiper-image"
+                    src="assets/images/collection-10.jpeg"
+                    alt="NFT"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative z-[1] mt-12 md:mt-16 lg:absolute lg:top-1/2 lg:mt-0 lg:w-full lg:-translate-y-1/2"
+          >
+            <div
+              class="swiper-button-prev slider-arrow left-1/2 h-8 w-8 -translate-x-[150%] rounded-full bg-green-200 after:content-[''] md:h-12 md:w-12 lg:left-0 lg:translate-x-0 lg:bg-transparent 3xl:h-16 3xl:w-16 3xl:-translate-x-[6rem]"
+            >
+              <img
+                class="h-auto w-2/5 lg:w-full"
+                src="assets/images/arrow-left.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="swiper-button-next slider-arrow right-1/2 h-8 w-8 translate-x-[150%] rounded-full bg-green-200 after:content-[''] md:h-12 md:w-12 lg:right-0 lg:translate-x-0 lg:bg-transparent 3xl:h-16 3xl:w-16 3xl:translate-x-[6rem]"
+            >
+              <img
+                class="h-auto w-2/5 lg:w-full"
+                src="assets/images/arrow-right.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./NFTs Collection Area  -->
+
+    <!-- =============== Team Members =============== -->
+    <section class="section-my section-py">
+      <div class="container">
+        <div class="flex flex-col items-center text-center">
+          <div>
+            <h2 class="section-heading">Our Team Members</h2>
+            <p class="section-para lg:max-w-[60ch]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+              numquam dolor ex cumque exercitationem provident!
+            </p>
+          </div>
+          <div
+            class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4 lg:mt-20 lg:grid-cols-2 lg:gap-10 xl:grid-cols-4"
+          >
+            <div class="team-member">
+              <div class="team-member__image__wrapper">
+                <img
+                  class="team-member__image"
+                  src="assets/images/team-member-1.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <span class="team-member__name">Alen Lee</span>
+                <div>
+                  <ul>
+                    <li>
+                      <a class="social-link" href="#/"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="social-link" href="#/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="social-link" href="#/"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="team-member__image__wrapper">
+                <img
+                  class="team-member__image"
+                  src="assets/images/team-member-2.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <span class="team-member__name">Nicol Husy</span>
+                <div>
+                  <ul>
+                    <li>
+                      <a class="social-link" href="#/"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="social-link" href="#/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="social-link" href="#/"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="team-member__image__wrapper">
+                <img
+                  class="team-member__image"
+                  src="assets/images/team-member-3.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <span class="team-member__name">Lucy White</span>
+                <div>
+                  <ul>
+                    <li>
+                      <a class="social-link" href="#/"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="social-link" href="#/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="social-link" href="#/"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="team-member__image__wrapper">
+                <img
+                  class="team-member__image"
+                  src="assets/images/team-member-4.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <span class="team-member__name">Obmar Wood</span>
+                <div>
+                  <ul>
+                    <li>
+                      <a class="social-link" href="#/"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="social-link" href="#/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="social-link" href="#/"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Team Members -->
+
+    <!-- =============== Top Collection =============== -->
+    <section class="section-my section-py">
+      <div class="container">
+        <div>
+          <h2 class="section-heading text-center">
+            Top Collection Over 10 days
+          </h2>
+        </div>
+        <div
+          class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mx-auto md:w-max md:gap-6 lg:mt-20 lg:gap-9 xl:grid-cols-3 xl:gap-6 2xl:gap-9"
+        >
+          <div class="flex items-center justify-center xl:justify-start">
+            <div class="count">01</div>
+            <div class="collection-item lg:grow">
+              <div class="flex items-center">
+                <div class="collection-image__wrapper">
+                  <img src="assets/images/collection-1.jpeg" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="mb-1 text-[16px] font-medium leading-5 text-secondary lg:text-[22px]"
+                    >Cute Altzee</span
+                  >
+                  <span class="text-xs text-gray-400">Floor Price: $22</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-base font-medium text-red-500 xl:text-xl"
+                  >%34.67</span
+                >
+                <span
+                  class="text-[22px] font-normal xl:text-[24px] 2xl:text-[28px]"
+                  >35,000</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center xl:justify-start">
+            <div class="count">02</div>
+            <div class="collection-item lg:grow">
+              <div class="flex items-center">
+                <div class="collection-image__wrapper">
+                  <img src="assets/images/collection-2.jpeg" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="mb-1 text-[16px] font-medium leading-5 text-secondary lg:text-[22px]"
+                    >Silent Eyes</span
+                  >
+                  <span class="text-xs text-gray-400">Floor Price: $35</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-base font-medium text-red-500 xl:text-xl"
+                  >%20.36</span
+                >
+                <span
+                  class="text-[22px] font-normal xl:text-[24px] 2xl:text-[28px]"
+                  >43,000</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center xl:justify-start">
+            <div class="count">03</div>
+            <div class="collection-item lg:grow">
+              <div class="flex items-center">
+                <div class="collection-image__wrapper">
+                  <img src="assets/images/collection-3.jpeg" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="mb-1 text-[16px] font-medium leading-5 text-secondary lg:text-[22px]"
+                    >Alien Brain</span
+                  >
+                  <span class="text-xs text-gray-400">Floor Price: $56</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-base font-medium text-red-500 xl:text-xl"
+                  >%65.83</span
+                >
+                <span
+                  class="text-[22px] font-normal xl:text-[24px] 2xl:text-[28px]"
+                  >85,000</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center xl:justify-start">
+            <div class="count">04</div>
+            <div class="collection-item lg:grow">
+              <div class="flex items-center">
+                <div class="collection-image__wrapper">
+                  <img src="assets/images/collection-4.jpeg" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="mb-1 text-[16px] font-medium leading-5 text-secondary lg:text-[22px]"
+                    >Aloha Beach</span
+                  >
+                  <span class="text-xs text-gray-400">Floor Price: $28</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-base font-medium text-red-500 xl:text-xl"
+                  >%36.86</span
+                >
+                <span
+                  class="text-[22px] font-normal xl:text-[24px] 2xl:text-[28px]"
+                  >37,000</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center xl:justify-start">
+            <div class="count">05</div>
+            <div class="collection-item lg:grow">
+              <div class="flex items-center">
+                <div class="collection-image__wrapper">
+                  <img src="assets/images/collection-5.jpeg" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="mb-1 text-[16px] font-medium leading-5 text-secondary lg:text-[22px]"
+                    >Moon Killer</span
+                  >
+                  <span class="text-xs text-gray-400">Floor Price: $74</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-base font-medium text-red-500 xl:text-xl"
+                  >%74.34</span
+                >
+                <span
+                  class="text-[22px] font-normal xl:text-[24px] 2xl:text-[28px]"
+                  >64,000</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center xl:justify-start">
+            <div class="count">06</div>
+            <div class="collection-item lg:grow">
+              <div class="flex items-center">
+                <div class="collection-image__wrapper">
+                  <img src="assets/images/collection-6.jpeg" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="mb-1 text-[16px] font-medium leading-5 text-secondary lg:text-[22px]"
+                    >Nature Nut</span
+                  >
+                  <span class="text-xs text-gray-400">Floor Price: $75</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-base font-medium text-red-500 xl:text-xl"
+                  >%25.67</span
+                >
+                <span
+                  class="text-[22px] font-normal xl:text-[24px] 2xl:text-[28px]"
+                  >74,000</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center xl:justify-start">
+            <div class="count">07</div>
+            <div class="collection-item lg:grow">
+              <div class="flex items-center">
+                <div class="collection-image__wrapper">
+                  <img src="assets/images/collection-7.jpeg" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="mb-1 text-[16px] font-medium leading-5 text-secondary lg:text-[22px]"
+                    >Mad Boxer</span
+                  >
+                  <span class="text-xs text-gray-400">Floor Price: $83</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-base font-medium text-red-500 xl:text-xl"
+                  >%25.74</span
+                >
+                <span
+                  class="text-[22px] font-normal xl:text-[24px] 2xl:text-[28px]"
+                  >85,000</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center xl:justify-start">
+            <div class="count">08</div>
+            <div class="collection-item lg:grow">
+              <div class="flex items-center">
+                <div class="collection-image__wrapper">
+                  <img src="assets/images/collection-8.jpeg" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="mb-1 text-[16px] font-medium leading-5 text-secondary lg:text-[22px]"
+                    >Rose Catcher</span
+                  >
+                  <span class="text-xs text-gray-400">Floor Price: $63</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-base font-medium text-red-500 xl:text-xl"
+                  >%42.53</span
+                >
+                <span
+                  class="text-[22px] font-normal xl:text-[24px] 2xl:text-[28px]"
+                  >63,000</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center xl:justify-start">
+            <div class="count">09</div>
+            <div class="collection-item lg:grow">
+              <div class="flex items-center">
+                <div class="collection-image__wrapper">
+                  <img src="assets/images/collection-9.jpeg" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="mb-1 text-[16px] font-medium leading-5 text-secondary lg:text-[22px]"
+                    >Angel Wings</span
+                  >
+                  <span class="text-xs text-gray-400">Floor Price: $25</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-base font-medium text-red-500 xl:text-xl"
+                  >%74.22</span
+                >
+                <span
+                  class="text-[22px] font-normal xl:text-[24px] 2xl:text-[28px]"
+                  >42,000</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Top Collection -->
+
+    <!-- =============== News Letter =============== -->
+    <section class="section-my section-py">
+      <div class="container">
+        <div
+          class="gradient relative z-0 rounded-3xl py-[50px] px-4 before:absolute before:inset-[2px] before:-z-[1] before:rounded-3xl before:bg-gradient-to-r before:from-green-100 before:to-green-200 lg:mx-auto lg:max-w-[876px] lg:rounded-[30px] lg:py-[120px] lg:before:rounded-[30px] xl:max-w-none"
+        >
+          <div class="text-center lg:m-auto lg:max-w-[960px]">
+            <h2 class="section-heading text-center">Join Our Community</h2>
+            <p class="section-para mx-auto max-w-[60ch]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+              ipsum quod ab optio nisi reprehenderit atque incidunt iusto
+              corrupti? Deserunt.
+            </p>
+            <div
+              class="gradient relative z-0 m-auto mt-14 w-[90%] skew-x-[25deg] before:absolute before:inset-[2px] before:-z-[1] before:bg-green-200 lg:before:inset-1"
+            >
+              <form action="">
+                <div class="flex items-center justify-between">
+                  <div class="basis-3/4">
+                    <input
+                      class="w-full -skew-x-[25deg] bg-transparent p-4 text-lg outline-none lg:p-8 lg:text-2xl"
+                      type="email"
+                      placeholder="Enter your email..."
+                    />
+                  </div>
+                  <div
+                    class="gradient relative z-0 basis-1/4 before:absolute before:inset-[2px] before:-z-[1] before:bg-gradient-to-r before:from-green-600 before:to-green-700 lg:before:inset-1"
+                  >
+                    <button
+                      class="w-full -skew-x-[25deg] p-4 text-xl font-medium lg:p-8 lg:text-3xl"
+                      role="button"
+                      type="submit"
+                    >
+                      Join
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./News Letter -->
+
+    <!-- =============== Footer =============== -->
+    <footer class="section-my section-py mb-0 bg-green-400">
+      <div class="container">
+        <div
+          class="space-y-10 py-5 lg:space-y-20 xl:flex xl:justify-between xl:space-y-0 xl:space-x-20"
+        >
+          <div
+            class="flex flex-col items-center text-center xl:block xl:basis-2/5 xl:text-left"
+          >
+            <a href="#/">
+              <img
+                class="mb-4 w-[135px] lg:mb-8 lg:w-[180px]"
+                src="assets/images/nft-galaxy-logo.png"
+                alt=""
+              />
+            </a>
+            <p class="max-w-[60ch] text-lg font-light lg:text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur numquam eum quibusdam assumenda, totam facilis
+              nesciunt.
+            </p>
+            <ul class="mt-6 flex space-x-4 lg:space-x-6">
+              <li>
+                <a
+                  class="social-link h-[40px] w-[40px] text-lg lg:h-[50px] lg:w-[50px] lg:text-2xl"
+                  href="#/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="social-link h-[40px] w-[40px] text-lg lg:h-[50px] lg:w-[50px] lg:text-2xl"
+                  href="#/"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-link h-[40px] w-[40px] text-lg lg:h-[50px] lg:w-[50px] lg:text-2xl"
+                  href="#/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="social-link h-[40px] w-[40px] text-lg lg:h-[50px] lg:w-[50px] lg:text-2xl"
+                  href="#/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-wrap gap-10 xs:justify-around xl:basis-3/5 xl:justify-between"
+          >
+            <div>
+              <span
+                class="mb-4 inline-block text-xl font-medium lg:mb-8 lg:text-2xl 2xl:text-3xl"
+                >My Account</span
+              >
+              <ul
+                class="space-y-2 text-lg font-light text-light lg:space-y-4 lg:text-xl 2xl:text-2xl"
+              >
+                <li><a class="footer-link" href="#/">Authors</a></li>
+                <li><a class="footer-link" href="#/">Collection</a></li>
+                <li>
+                  <a class="footer-link" href="#/">Creative Collection</a>
+                </li>
+                <li><a class="footer-link" href="#/">Another Profile</a></li>
+              </ul>
+            </div>
+            <div>
+              <span
+                class="mb-4 inline-block text-xl font-medium lg:mb-8 lg:text-2xl 2xl:text-3xl"
+                >Community</span
+              >
+              <ul
+                class="space-y-2 text-lg font-light text-light lg:space-y-4 lg:text-xl 2xl:text-2xl"
+              >
+                <li><a class="footer-link" href="#/">About Us</a></li>
+                <li><a class="footer-link" href="#/">Contact Us</a></li>
+                <li><a class="footer-link" href="#/">Our Blog</a></li>
+              </ul>
+            </div>
+            <div>
+              <span
+                class="mb-4 inline-block text-xl font-medium lg:mb-8 lg:text-2xl 2xl:text-3xl"
+                >Information</span
+              >
+              <ul
+                class="space-y-2 text-lg font-light text-light lg:space-y-4 lg:text-xl 2xl:text-2xl"
+              >
+                <li>
+                  <a class="footer-link" href="#/">Marketplace</a>
+                </li>
+                <li><a class="footer-link" href="#/">Contact</a></li>
+                <li><a class="footer-link" href="#/">Art Work</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ./Footer -->
+
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b525e53f9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js" type="module"></script>
+    <!-- ./Scripts -->
+  </body>
+</html>
