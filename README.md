@@ -5,4 +5,4 @@ using HTML5, Tailwind CSS and Javascript.
 
 ## 🔗 Live Preview
 
-[Go Live](saddamhossain.com/nft-galaxy/index.html)
+[Go Live](https://saddamhossain.com/nft-galaxy/index.html)
